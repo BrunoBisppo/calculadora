@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 218, 247);
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-areas: 
+    "resultado resultado resultado resultado"
+    "btn-limpar btn-limpar btn-divisao btn-multiplicacao"
+    "btn-7 btn-8 btn-9 btn-subtracao"
+    "btn-4 btn-5 btn-6 btn-soma"
+    "btn-1 btn-2 btn-3 btn-igual"
+    "btn-0 btn-0 btn-ponto btn-igual";
+    height: 70%;
+    width: 30%;
+}
+
+.calculadora button{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.resultado{
+    grid-area: resultado;
+    text-align: right;
+    padding: 7px;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.btn-limpar{
+    grid-area: btn-limpar;
+    background-color: var(--vermelho);
+}
+
+.btn-divisao{
+    grid-area: btn-divisao;
+}
+
+.btn-multiplicacao{
+    grid-area: btn-multiplicacao;
+}
+
+.btn-7{
+    grid-area: btn-7;
+}
+
+.btn-8{
+    grid-area: btn-8;
+}
+
+.btn-9{
+    grid-area: btn-9;
+}
+
+.btn-subtracao{
+    grid-area: btn-subtracao;
+}
+
+.btn-4{
+    grid-area: btn-4;
+}
+
+.btn-5{
+    grid-area: btn-5;
+}
+
+.btn-6{
+    grid-area: btn-6;
+}
+
+.btn-soma{
+    grid-area: btn-soma;
+}
+
+.btn-1{
+    grid-area: btn-1;
+}
+
+.btn-2{
+    grid-area: btn-2;
+}
+
+.btn-3{
+    grid-area: btn-3;
+}
+
+.btn-igual{
+    grid-area: btn-igual;
+    background-color: var(--vermelho);
+}
+
+.btn-0{
+    grid-area: btn-0;
+}
+
+.btn-ponto{
+    grid-area: btn-ponto;
+}

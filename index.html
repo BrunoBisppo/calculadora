@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <input type="text" class="resultado w-100" id="resultado" disabled>
+            <button class="btn-0" onclick="calcular('valor', '0')">0</button>
+            <button class="btn-1" onclick="calcular('valor', '1')">1</button>
+            <button class="btn-2" onclick="calcular('valor', '2')">2</button>
+            <button class="btn-3" onclick="calcular('valor', '3')">3</button>
+            <button class="btn-4" onclick="calcular('valor', '4')">4</button>
+            <button class="btn-5" onclick="calcular('valor', '5')">5</button>
+            <button class="btn-6" onclick="calcular('valor', '6')">6</button>
+            <button class="btn-7" onclick="calcular('valor', '7')">7</button>
+            <button class="btn-8" onclick="calcular('valor', '8')">8</button>
+            <button class="btn-9" onclick="calcular('valor', '9')">9</button>
+            <button class="btn-soma" onclick="calcular('acao', '+')">+</button>
+            <button class="btn-subtracao" onclick="calcular('acao', '-')">-</button>
+            <button class="btn-divisao" onclick="calcular('acao', '/')">/</button>
+            <button class="btn-multiplicacao" onclick="calcular('acao', '*')">*</button>
+            <button class="btn-igual" onclick="calcular('acao', '=')">=</button>
+            <button class="btn-ponto" onclick="calcular('acao', '.')">.</button>
+            <button class="btn-limpar" onclick="calcular('acao', 'c')">C</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
